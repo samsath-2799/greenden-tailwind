@@ -18,21 +18,37 @@
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
       <h1 class="text-2xl">GREENDEN</h1>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6 md:hidden"
+      <!-- Small screen menubar -->
+      <div class="relative">
+          <button id="menu-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+      <!-- Drop down menu -->
+     <div id="menu" class="flex flex-col items-center gap-2 bg-green-100 border border-b-emerald-950 hidden absolute right-0 p-5 rounded-xl md:hidden">
+      <a class="hover:underline hover:text-black" href="index.html">Home</a>
+      <a class="hover:underline hover:text-black" href="products.html"
+        >Products</a
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
+      <a class="hover:underline hover:text-black" href="contact.html"
+        >Contact</a
+      >
+     </div>
+      </div>
 
+      <!-- Medium screen menubar -->
       <ul class="text-gray-600 hidden md:flex gap-5">
         <li>
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
@@ -47,7 +63,7 @@
     </nav> 
     <!-- Products -->
      <section class="text-center p-10">
-        <h1 class="font-bold text-3xl mt-7 mb-3">Our Products</h1>
+        <h1 class="font-bold text-3xl mt-5 mb-3">Our Products</h1>
         <input class="border border-black p-2" type="text" placeholder="Search for a Product..." style="width: 80%;">
         
       <div class="grid grid-cols-2 gap-5 mt-10 md:grid-cols-4">
@@ -145,6 +161,6 @@
           
           <p>©2026 Greenday.com</p>
       </section>
-
+ <script src="index.js" charset="UTF-8"></script>
 </body>
 </html>

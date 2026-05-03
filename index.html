@@ -19,45 +19,66 @@
       class="bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10"
     >
       <h1 class="text-2xl">GREENDEN</h1>
+      <!-- Small screen menubar -->
+      <div class="relative">
+          <button id="menu-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6 md:hidden"
+      <!-- Drop down menu -->
+     <div id="menu" class="flex flex-col items-center gap-2 bg-green-100 border border-b-emerald-950 hidden absolute right-0 p-5 rounded-xl md:hidden">
+      <a class="hover:underline hover:text-black" href="index.html">Home</a>
+      <a class="hover:underline hover:text-black" href="products.html"
+        >Products</a
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-
+      <a class="hover:underline hover:text-black" href="contact.html"
+        >Contact</a
+      >
+     </div>
+      </div>
+      <!-- Medium screen menubar -->
       <ul class="text-gray-600 hidden md:flex gap-5">
         <li>
           <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="products.html">Products</a>
+          <a class="hover:underline hover:text-black" href="products.html"
+            >Products</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
-
+    
     <!-- Header Section -->
     <section class="bg-green-100 p-4 flex justify-center items-center">
       <div>
         <p class="mb-4">
           We offer you a wide range of Artificial and Natural Flowers
         </p>
-        <h1 class="text-3xl md:text-5xl font-bold mb-5">Plants for your Interior</h1>
+        <h1 class="text-3xl md:text-5xl font-bold mb-5">
+          Plants for your Interior
+        </h1>
 
         <div>
-          <button
+          <button id="shopnow"
             class="bg-black text-white p-2 rounded border border-black hover:bg-transparent hover:text-black"
           >
             Shop Now
@@ -72,8 +93,8 @@
         <p class="mt-5">160+ Plant Species | 100+ Clients</p>
       </div>
 
-      <div class="hidden md:block">
-        <img src="./images/header-img.jpg" alt="Flower-Pot" class="w-80 p-5" />
+      <div class="hidden md:block p-5">
+        <img src="./images/header-img.jpg" alt="Flower-Pot" class="w-80 hover:shadow-2xl cursor-pointer"/>
       </div>
     </section>
     <!-- About Section -->
@@ -82,7 +103,9 @@
       <p>This site for those who admire the beauty and harmony of nature</p>
 
       <div class="px-10 md:flex">
-        <div class="border border-black p-2 m-5">
+        <div
+          class="border border-black p-2 m-5 hover:shadow-xl transform hover:-translate-y-2"
+        >
           <i
             class="fa-solid fa-seedling text-4xl"
             style="color: rgb(0, 0, 0)"
@@ -96,7 +119,9 @@
           </p>
         </div>
 
-        <div class="border border-black p-2 m-5">
+        <div
+          class="border border-black p-2 m-5 hover:shadow-xl transform hover:-translate-y-2"
+        >
           <i
             class="fa-solid fa-suitcase-rolling text-4xl"
             style="color: rgb(0, 0, 0)"
@@ -110,7 +135,9 @@
           </p>
         </div>
 
-        <div class="border border-black p-2 m-5">
+        <div
+          class="border border-black p-2 m-5 hover:shadow-xl transform hover:-translate-y-2"
+        >
           <i
             class="fa-solid fa-phone-volume text-4xl"
             style="color: rgb(0, 0, 0)"
@@ -203,23 +230,48 @@
       </div>
     </section>
     <!-- News Letter -->
-     <section class="text-center flex flex-col justify-center items-center">
-       <h1 class="font-bold text-3xl mt-5 mb-2">Join Our News Letter</h1>
-       <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
-       <input type="text" class="border border-black p-2 m-5 rounded" style="width: 80%;">
-       <button class="bg-black text-white p-2 rounded m-1 underline">Subscribe</button>
-     </section>
-     <!-- Footer -->
-      <section class="bg-green-100 flex flex-col gap-5 p-10">
-          <h1 class="text-4xl">Greenden</h1>
-          <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
-         
-          <div class="flex gap-5">
-            <i class="fa-brands fa-facebook text-3xl" style="color: rgb(0, 0, 0);"></i>
-            <i class="fa-brands fa-x-twitter text-3xl" style="color: rgb(0, 0, 0);"></i>
-            <i class="fa-brands fa-instagram text-3xl" style="color: rgb(0, 0, 0);"></i>
-          </div>
-          
-          <p>©2026 Greenday.com</p>
-      </section>
+    <section class="text-center flex flex-col justify-center items-center">
+      <h1 class="font-bold text-3xl mt-5 mb-2">Join Our News Letter</h1>
+      <p>
+        Signup for our email newspaper to get exclusive discounts, updates, and
+        more
+      </p>
+      <input
+        type="text"
+        class="border border-black p-2 m-5 rounded"
+        style="width: 80%"
+      />
+      <button
+        class="bg-black text-white p-2 rounded m-2 underline hover:bg-gray-600"
+      >
+        Subscribe
+      </button>
+    </section>
+    <!-- Footer -->
+    <section class="bg-green-100 flex flex-col gap-5 p-10">
+      <h1 class="text-4xl">Greenden</h1>
+      <p>
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused
+        below for those interest
+      </p>
+
+      <div class="flex gap-5">
+        <i
+          class="fa-brands fa-facebook text-3xl"
+          style="color: rgb(0, 0, 0)"
+        ></i>
+        <i
+          class="fa-brands fa-x-twitter text-3xl"
+          style="color: rgb(0, 0, 0)"
+        ></i>
+        <i
+          class="fa-brands fa-instagram text-3xl"
+          style="color: rgb(0, 0, 0)"
+        ></i>
+      </div>
+
+      <p>©2026 Greenday.com</p>
+    </section>
+    <script src="index.js" charset="UTF-8"></script>
   </body>
+</html>
